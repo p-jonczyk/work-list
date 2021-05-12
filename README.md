@@ -15,6 +15,8 @@ Entery test data:
  - *Month*: *4*
  - *Work starts*: *6*
  - *Set 'work statrts' parameter to (day of month - included)*: *30*
+<be />
+
  **After that, check 'FirmX John Snow.xlsx' file to see whole functionality of program**
 
 *After entering improper data the program will ask if you would like to see 'help'. If you have problems try it out or simply read 'help.txt'*
