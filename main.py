@@ -48,13 +48,12 @@ def main():
             month = int(input('Month (1 - 12): '))
             # get days in month
             days_in_month = calendar.monthrange(year, month)[1]
-            print(
-                f"Chosen month has {days_in_month} days.")
-            # input handeling
-            input_handeling.handeling_work_hour_days(
-                work_hour_start_days, days_in_month)
-            # make check not work start but dict of hours
             if input_handeling.check_input(pause, year, month):
+                print(
+                    f"Chosen month has {days_in_month} days.")
+                # input handeling
+                input_handeling.handeling_work_hour_days(
+                    work_hour_start_days, days_in_month)
                 break
             else:
                 cnt += 1
