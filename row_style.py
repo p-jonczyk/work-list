@@ -1,4 +1,5 @@
 from openpyxl.styles import Border, Side, NamedStyle, Font, PatternFill, NumberFormatDescriptor, Alignment
+
 # setting base styles of excel rows/cells
 base = NamedStyle(name="base")
 base.font = Font(name="Segoe UI Light", size=8)
