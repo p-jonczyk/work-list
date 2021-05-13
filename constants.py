@@ -1,4 +1,4 @@
-defined_cell_occurence = ["X", "K", "U", "UU", "F", "SA", "SU"]
+defined_cell_occurence = ["X", "SL", "V", "UV", "H"]
 
 # main
 welcome_msg = ("Hello!\n"
