@@ -21,4 +21,5 @@ Entery test data:
 
 *After entering improper data the program will ask if you would like to see 'help'. If you have problems try it out or simply read 'help.txt'*
 <be />
+
 **base.xlsx legend may be changed in constants** - *defined_cell_occurance* list
