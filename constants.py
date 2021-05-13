@@ -23,15 +23,13 @@ def output_folder_check_fail_msg(construction_site):
 
 help_msg = """\nCreated by Pawel Jonczyk
 
-Here are some helpful informations:
-
 DATA ENTERING
-> 'Break' sholud be greater or equal 0 but less then 24
+> 'Break' sholud be greater or equal 0 but less than 24
 > 'Month' be number greater than 0 and less or equal than 12
 > 'Year' can be set from 1990 to 2100
 > 'Work starts' should be number greater than 0 and less than 24
-> 'Day (included)' should not be greater then 'Days in the month' 
-  but should be greater then 0 and previously entered value
+> 'Day (included)' should not be greater than 'Days in the month' 
+  but should be greater than 0 and previously entered value
   Entered day (value) will also have start hour as given before entering 'Day'
 
 SETTING NOT WHOLE HOURS
