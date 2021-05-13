@@ -8,7 +8,7 @@ DATA ENTERING
 > 'Year' can be set from 1990 to 2100
 > 'Work starts' should be number greater than 0 and less than 24
 > 'Day (included)' should not be greater then 'Days in the month' 
-  but should be greater then 0 and previously entered value
+  but should be greater then 0 and previously entered value.
   Entered day (value) will also have start hour as given before entering 'Day'
 
 SETTING NOT WHOLE HOURS
@@ -22,6 +22,7 @@ For program to work properly you need to have two files in the same directory
 as '.exe' file:
 > 'base.xlsx' - which is template for individual hourslist
 > 'List of hours.xlsx - which is source file from which all data will be taken
+BOTH FILES HAVE TO HAVE THE SAME FILENAME AS ABOVE
 
 SOURCE FILE
 > Hours entered in source file ('List of hours.xlsx') have to be in number format
