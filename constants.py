@@ -2,7 +2,7 @@ defined_cell_occurence = ["X", "SL", "V", "UV", "H"]
 
 # main
 welcome_msg = ("Hello!\n"
-               "Your workhours record file will be converted into separet files"
+               "Your workhours record file will be converted into separet files "
                "each for individual worker.\nPlease enter the following data...\n")
 
 incorrect_values_msg = ("\nOne or multiple entered values were incorrect\n"
