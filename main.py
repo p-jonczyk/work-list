@@ -60,7 +60,7 @@ def main():
                 print(const.incorrect_values_msg)
         except ValueError:
             cnt += 1
-            print("You have to enter numbers.\n")
+            print(const.incorrect_values_msg)
 
     # create new directory after chcecking all conditions
     os.mkdir(f"{output_folder_path}")
