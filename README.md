@@ -20,5 +20,5 @@ Entery test data:
  **After that, check 'FirmX John Snow.xlsx' file to see whole functionality of program**
 
 *After entering improper data the program will ask if you would like to see 'help'. If you have problems try it out or simply read 'help.txt'*
-
-
+<be />
+**base.xlsx legend may be changed in constants** - *defined_cell_occurance* list
