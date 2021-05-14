@@ -5,17 +5,20 @@ import openpyxl as xl
 import constants as cosnt
 
 
-def check_required_files_existence(file_path, exist=True, construction_site=None):
+def check_required_files_existence(file_path, source_file_name=None, construction_site=None):
     """Checks if required files existing in directory
 
     Parameters: 
 
     file_path (str): path to be checked"""
 
-    if exist == True:
+    if source_file_name is not None:
         check = os.path.exists(file_path)
         if check == False:
-            print(cosnt.msg_exist)
+            print(cosnt.required_files_chack_fail_msg(source_file_name))
+            exit(fail=True)
+        elif source_file_name == "base.xlsx":
+            print(cosnt.source_file_name_base_msg)
             exit(fail=True)
     else:
         check = os.path.exists(file_path)

@@ -3,8 +3,9 @@
 <br />
 
 ### HOW TO
-**List of hours.xlsx** *(required)* is a source file where user may create his own workhour list as presented but with the same filename.
+**your_source_file_name.xlsx** *(required)* is a source file where user may create his own workhour list as presented.
 <br />
+
 **base.xlsx** *(required)* is base file *(template)* for individual employee list.
 <br />
 

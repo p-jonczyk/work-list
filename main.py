@@ -10,9 +10,14 @@ import input_handeling
 
 def main():
 
+    # take source file name
+    source_file_name = input(
+        "\nSource - employees workhour list - file name (with .xlsx extention): ")
+
     # loading the source excel file to get data from
-    source_file_path = ".\List of hours.xlsx"
-    files_handeling.check_required_files_existence(source_file_path)
+    source_file_path = f".\{source_file_name}"
+    files_handeling.check_required_files_existence(
+        source_file_path, source_file_name)
     source_ws = xl.load_workbook(source_file_path).worksheets[0]
 
     # get data from source file
@@ -21,13 +26,14 @@ def main():
 
     # loading the base excel file to save data to
     base_file_path = ".\\base.xlsx"
-    files_handeling.check_required_files_existence(base_file_path)
+    files_handeling.check_required_files_existence(
+        base_file_path, source_file_name)
     base_file = xl.load_workbook(base_file_path)
     base_ws = base_file.active
 
     # check output folder existance
     output_folder_path = f".\{construction_site} employees worklists"
-    files_handeling.check_required_files_existence(output_folder_path, exist=False,
+    files_handeling.check_required_files_existence(output_folder_path,
                                                    construction_site=construction_site)
 
     # different work hour start in month dict

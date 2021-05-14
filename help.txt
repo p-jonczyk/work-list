@@ -19,9 +19,9 @@ REQUIRED FILES
 For program to work properly you need to have two files in the same directory
 as '.exe' file:
 > 'base.xlsx' - which is template for individual hourslist
-> 'List of hours.xlsx - which is source file from which all data will be taken
+> 'your_sourcefile_name.xlsx' - which is source file from which all data will be taken
 
 SOURCE FILE
-> Hours entered in source file ('List of hours.xlsx') have to be in number format
+> Hours entered in source file ('your_sourcefile_name.xlsx') have to be in number format
 i.e. if employee worked 10.5h then '10.5' should be in proper cell
-Any different format will be not considerd in sum of worked hours.
+Any different format will be not considerd in sum of worked hours

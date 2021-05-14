@@ -1,7 +1,7 @@
 defined_cell_occurence = ["X", "SL", "V", "UV", "H"]
 
 # main
-welcome_msg = ("Hello!\n"
+welcome_msg = ("\n\nHello!\n"
                "Your workhours record file will be converted into separet files "
                "each for individual worker.\nPlease enter the following data...\n")
 
@@ -9,10 +9,13 @@ incorrect_values_msg = ("\nOne or multiple entered values were incorrect\n"
                         "Please try again...\n")
 
 
-# files_handeling
-msg_exist = ("\nRequired files do not exist in current location...\n"
-             "Please check if 'base.xlsx' and 'List of hours.xlsx' "
-             "are within current location and confirm their proper names.")
+# files handeling
+def required_files_chack_fail_msg(source_file_name):
+
+    msg_exist = ("\nRequired files do not exist in current location...\n"
+                 f"Please check if 'base.xlsx' and '{source_file_name}' "
+                 "are within current location and confirm their proper names.")
+    return msg_exist
 
 
 def output_folder_check_fail_msg(construction_site):
@@ -20,6 +23,8 @@ def output_folder_check_fail_msg(construction_site):
                      "already exists.")
     return msg_not_exist
 
+
+source_file_name_base_msg = "Source file cannot have name: 'base.xlsx'"
 
 help_msg = """\nCreated by Pawel Jonczyk
 
@@ -42,9 +47,9 @@ REQUIRED FILES
 For program to work properly you need to have two files in the same directory
 as '.exe' file:
 > 'base.xlsx' - which is template for individual hourslist
-> 'List of hours.xlsx - which is source file from which all data will be taken
+> 'your_source_file_name.xlsx' - which is source file from which all data will be taken
 
 SOURCE FILE
-> Hours entered in source file ('List of hours.xlsx') have to be in number format
+> Hours entered in source file ('your_source_file_name.xlsx') have to be in number format
 i.e. if employee worked 10.5h then '10.5' should be in proper cell
 Any different format will be not considerd in sum of worked hours\n\n"""
