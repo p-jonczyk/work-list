@@ -133,7 +133,7 @@ def fill_rows(base_ws, row, max_col, work_hour_start_days, pause):
             try:
                 base_ws[work_hours_cell] = value
                 base_ws[pause_cell] = pause
-                value = int(value)
+                value = float(value)
                 base_ws[work_start_cell] = hour_representation_formula(
                     work_start)
                 base_ws[work_end_cell] = hour_representation_formula(
