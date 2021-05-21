@@ -37,12 +37,6 @@ DATA ENTERING
   but should be greater than 0 and previously entered value
   Entered day (value) will also have start hour as given before entering 'Day'
 
-SETTING NOT WHOLE HOURS
-If you would like to set (for example):
-> 'Work starts' as 6:30 then enter at the beginning '6.5'
-> 'Work starts' as 6:15 then enter at the beginning '6.25'
-> REMEMBER TO USE ' . ' NOT ' , ' as separator
-
 REQUIRED FILES
 For program to work properly you need to have two files in the same directory
 as '.exe' file:
@@ -51,5 +45,4 @@ as '.exe' file:
 
 SOURCE FILE
 > Hours entered in source file ('your_source_file_name.xlsx') have to be in number format
-i.e. if employee worked 10.5h then '10.5' should be in proper cell
 Any different format will be not considerd in sum of worked hours\n\n"""
